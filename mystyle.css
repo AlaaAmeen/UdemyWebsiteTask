@@ -1,0 +1,377 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.Navbar {
+    background-color: white;
+    width: 100%;
+    height: 78px;
+    box-shadow: 0px 2px 10px #b6b3b3;
+    display: flex;
+    z-index: 2;
+}
+
+.Logo {
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.MainLi {
+    list-style-type: none;
+    margin-top: 28px;
+    margin-left: 25px;
+}
+.Categories {
+    position: relative;
+}
+
+.Categories:hover {
+    color: #921CCE;
+    cursor: pointer;
+}
+
+.List-2 {
+    display: none;
+    width: 250px;
+}
+
+.Categories:hover .List-2{
+    display: block;
+}
+
+.List-2 {
+    position: absolute;
+    top: 82px;
+    left: 20px;
+    list-style-type: none;
+    color: black;
+    padding: 20px;
+    border: 1px solid #F6F6F6;
+    box-shadow: 3px 3px 5px #DADADA;
+    background-color: white;
+}
+
+.List-2 span{
+    float: right;
+}
+
+.List-2 li {
+    padding-bottom: 17px;
+}
+
+.List-2 li:hover {
+    color: #921CCE;
+}
+
+.List-3, .List-4, .List-5 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    width: 250px;
+    padding: 20px;
+    left: 230px;
+    top: -21px;
+    border: 1px solid #F6F6F6;
+    box-shadow: 3px 3px 5px #DADADA;
+    color: black;
+}
+
+.List-4 {
+    top: -58px;
+}
+
+.List-5 {
+    top: -95px;
+}
+
+.List-3 li:hover {
+    color: #921CCE;
+}
+
+.List-4 li:hover {
+    color: #921CCE;
+}
+
+.List-5 li:hover {
+    color: #921CCE;
+}
+
+.List-2 li:first-of-type:hover .List-3{
+    display: block;
+}
+
+.List-2 li:nth-of-type(2):hover .List-4{
+    display: block;
+}
+
+.List-2 li:nth-of-type(3):hover .List-5{
+    display: block;
+}
+
+
+.SearchEngine {
+    position: relative;
+}
+
+.SearchEngine input{
+    margin-top: 13px;
+    margin-left: 25px;
+    width: 490px;
+    height: 45px;
+    border-radius: 40px;
+    padding-left: 50px;
+    font-size: 15px;
+    border: 1px solid black;
+    outline: none;
+    background-color: #F3F6F6;
+}
+
+.glyphicon-search {
+    position: absolute;
+    top: 29px;
+    left: 40px;
+    z-index: 3;
+}
+
+.glyphicon-search:hover {
+    cursor: pointer;
+}
+
+.UdemyBusiness{
+    margin-top: 26px;
+    margin-left: 25px;
+}
+
+.UdemyBusiness:hover {
+    color: #921CCE;
+    cursor: pointer;
+}
+
+.TeachOnUdemy {
+    margin-top: 26px;
+    margin-left: 25px;
+}
+
+.TeachOnUdemyButton div:nth-of-type(2) {
+    display: none;
+}
+
+.TeachOnUdemyButton{
+    position: relative;
+}
+
+.TeachOnUdemyButton:hover {
+    color: #921CCE;
+    cursor: pointer;
+}
+
+.TeachOnUdemyButton:hover .TeachOnUdemyText {
+    display: block;
+}
+
+.TeachOnUdemyText {
+    position: absolute;
+    top: 82px;
+    right: 5px;
+    width: 280px;
+    height: 180px;
+    background-color: white;
+    border: 1px solid #F6F6F6;
+    box-shadow: 3px 3px 5px #DADADA;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+}
+
+.TeachOnUdemyText button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    opacity: 0.87;
+}
+
+.TeachOnUdemyText button:hover {
+    opacity: 1;
+}
+
+.UdemyBusinessButton div:nth-of-type(2) {
+    display: none;
+}
+
+.UdemyBusinessButton{
+    position: relative;
+}
+
+.UdemyBusinessButton:hover {
+    color: #921CCE;
+    cursor: pointer;
+}
+
+.UdemyBusinessButton:hover .UdemyBusinessText {
+    display: block;
+}
+
+
+.UdemyBusinessText {
+    position: absolute;
+    top: 82px;
+    right: 5px;
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    border: 1px solid #F6F6F6;
+    box-shadow: 3px 3px 5px #DADADA;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+}
+
+.UdemyBusinessText button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    opacity: 0.87;
+}
+
+.UdemyBusinessText button:hover {
+    opacity: 1;
+}
+
+.glyphicon-shopping-cart {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.ShoppingCart {
+    position: relative;
+}
+
+.CartMsg {
+    display: none;
+    position: absolute;
+    top: 82px;
+    right: 5px;
+    width: 260px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid #F6F6F6;
+    box-shadow: 3px 3px 5px #DADADA;
+    padding: 30px;
+    text-align: center;
+}
+
+.ShoppingCart:hover {
+    cursor: pointer;
+    color: #921CCE;
+}
+
+.ShoppingCart:hover .CartMsg{
+    display: block;
+}
+
+.ShoppingCart p {
+    color: #676969;
+}
+
+.ShoppingCart a {
+ color: #921CCE;
+ font-weight: bold;
+}
+
+.ShoppingCart a:hover {
+    text-decoration: none;
+    color: #711A9E;
+}
+
+.icons {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.icons button {
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid black;
+}
+
+.LogIn {
+    background-color: white;
+    font-weight: bold;
+}
+
+.LogIn:hover {
+    background-color: #F3F6F6;
+}
+
+.SignUp {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    opacity: 0.87;
+}
+
+.SignUp:hover {
+    opacity: 1;
+}
+
+.Global {
+    background-color: white;
+    margin-left: 10px;
+}
+
+.Global:hover{
+    background-color: #F3F6F6;
+}
+
+.container {
+    display: relative;
+    width: 100%;
+}
+
+.container div {
+    background-color: white;
+    box-shadow: 3px 3px 5px #DADADA, -3px -3px 5px #DADADA;
+    padding: 15px;
+    width: 400px;
+    height: 250px;
+    display: absolute;
+    top: -330px;
+    margin-left: 80px;
+    font-size: 18px;
+}
+
+.container h1{
+    color: black;
+}
+
+.container input {
+    border: 1px solid black;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.serachForCourse {
+    position: absolute;
+    top: 200px;
+    left: 350px;
+}
+
+.Texts {
+    margin-top: -220px;
+    margin-left: 20px;
+    color: black;
+    font-size: 20px;
+}
